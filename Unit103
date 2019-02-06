@@ -1,0 +1,29 @@
+/* Created by: Khoa Le
+ * Created on: Feb 5 2019
+ * This program is made to see how much energy is released from an object at the speed of light.
+ */
+
+import java.util.Scanner;
+import java.lang.Math;
+
+public class Unit103 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		float mass = 0;
+		float answer = 0;
+		float speed = (float) (8.988E16);
+		
+		System.out.println(speed);
+		System.out.print("Please enter the mass.");
+		
+		mass = input.nextFloat();
+		answer = (float) (mass * speed);
+		
+		System.out.println("The amount of energy released from the object is " + answer + " Joules.");
+
+	}
+
+}
